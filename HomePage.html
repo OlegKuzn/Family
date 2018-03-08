@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kuznetsov family website</title>
+    <link rel="stylesheet" href="css\css\responsee.css"/>
+    <script type="text/javascript">
+    function ChangeLastName()
+    {
+        document.getElementById("lastName").innerText = document.getElementById("UserData").value;
+    }
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/ajaxhomepage.js"></script>
+    <script type="text/javascript"></script>
+</head>
+</head>
+<body>
+    Welcome to website of <span id="lastName">Kuznetsov</span> family.
+    <input id="UserData" type="text" onchange="ChangeLastName()"/>
+</br> 
+</br>
+</br>
+    This is a homepage of our family. In our family we have  5 people: grandmother, grandfather, son, daugther and a grandson.
+</br>
+    On our web site you can see each family member information. Hope you'll enjoy our web site.
+    <br/>
+    <audio controls autoplay loop>
+        <source src="content/audio/my_family.mp3" type="audio/mpeg"> </audio>
+        </br>
+        <a href="FamilyMembers.html" target="_blank" >Click here to see our family members</a>
+        <br />
+        <a href="ContactUs.html" target="_blank" >Click here to leave us your contact</a>
+        <br /> <br />
+        <button id="Anatoly">Father</button>
+        <button id="Vilena">Mother</button>
+        <button id="HomePage">Home Page</button>
+        <br /> <br />
+        <div id="getpage"></div>
+</body>
+</html>
